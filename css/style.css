@@ -1,0 +1,122 @@
+/*reset default style*/
+*{padding:0;
+margin:0;
+box-sizing: border-box;
+}
+body{
+    height:100vh ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-size: cover
+}
+
+.inline-block{
+    display: inline-block;
+    width: 33%;
+}
+.container{
+    width: 70%;
+    margin: 0 auto
+}
+    
+    .clock{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 350px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 5px solid #051424;
+        position: relative;
+        opacity: 0.8;
+        background-color: #051424;
+        box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0.8);
+
+    
+    }
+    
+    .clock .tab{
+       
+        position: absolute;
+        border: 2px solid red;
+    }
+    .position1{
+        width: 3px;
+        height: 20px;
+        top: 0%;
+        left: 50%;
+    }
+    .position2{
+        width: 20px;
+        height: 3px;
+        top: 50%;
+        right: 0%;
+    }
+    .position3{
+        width: 3px;
+        height: 20px;
+        bottom: 0%;
+        left: 50%;
+    }
+    .position4{
+        width: 20px;
+        height: 3px;
+        top: 50%;
+        left: 0%;
+    }
+    .clock .hours{
+        width: 80px;
+        height: 10px;
+        top: 50%;
+        left: 50%;
+        border: 2px solid red;
+        z-index: 1;
+        transform-origin: 0% 40%;
+    
+    
+    
+    }
+    .clock .min{
+        width: 120px;
+        height: 7px;
+        top: 50%;
+        left: 50%;
+        border: 2px solid red;
+        z-index: 2;
+        transform-origin: 0% 40%;
+    
+    
+    }
+    .clock .sec{
+        width: 139px;
+        height: 3px;
+        top: 51%;
+        left: 50%;
+        border: 1px solid red;
+        z-index: 3;
+        transform-origin: 0% 40%;
+        animation-timing-function: steps(60);
+    
+    }
+    .clock .dot{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        top: 51%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 4;
+        background-color: red;
+    }
+    .clock .line{
+        position: absolute;
+        margin: auto;
+        background-color: red;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    
+    }
+    
